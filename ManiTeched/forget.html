@@ -90,6 +90,19 @@
                 return regex.test(username);
             }
         });
+        function forgotPassword() {
+                const email = prompt("Please enter your registered email:");
+                const storedEmail = localStorage.getItem("e-mail");
+
+                if (email === storedEmail) {
+                    alert("A password reset link has been sent to your email.");
+        // You can also implement a real email sending process here
+                   } else {
+                   alert("Email not found. Please check and try again.");
+                   }
+            }
+        });
+  
   
 </script>
 </html>
