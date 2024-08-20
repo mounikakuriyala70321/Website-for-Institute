@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #5d5dbd, #6d35a2, #3682a9);
+            color: #fff;
+            text-align: center;
+        }
+        .navbar{
+            background: linear-gradient(to right,rgba(255, 255, 255, 0.47), rgba(26, 234, 192, 0.686),rgba(255, 255, 255, 0.571));
+            padding: 25px 15px 25px 15px;
+            margin-top: 0%;
+            gap: 15%;
+   
+        }
+        .navbar a{
+            border-left:3px hidden black;
+            text-decoration:solid;
+            font-size: 20px;
+            font-family: arial;
+            color: rgb(19, 19, 18);
+            padding: 15px 75px 15px 75px;
+            height: 40px;
+            transition: .4s ease-in-out;
+        }
+        .navbar  a:hover{
+            background-color: blue;
+            border-radius: 10px;
+            transform: scale(1.05);
+            border: 1px solid black;
+            color: #fff;
+
+}
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .heading {
+            margin-bottom: 40px;
+        }
+
+        .heading h3 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .heading h4 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .course {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 calc(33% - 40px);
+            box-sizing: border-box;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .course:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .course img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .course h4 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: antiquewhite;
+        }
+
+        .course p {
+            font-size: 18px;
+        }
+       
+
+        @media (max-width: 768px) {
+            .course {
+                flex: 1 1 calc(50% - 20px);
+            }   
+        }
+
+        @media (max-width: 480px) {
+            .course {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="About.html">About</a>
+        <a href="Trainer.html">Trainer</a>
+        <a href="batches.html", target="_blank">Batches</a>
+        <a href="course-details.html">Course Details</a>
+        <a href="login.html", target="_blank">Login</a>
+        <a href="signup.html", target="_blank">Signup</a>
+
+    </nav>
+    <div class="container">
+        <div class="heading">
+            <h3>About Course</h3>
+            <h4>Unlock Your Potential with Our Expert-Led Courses</h4>
+            <p>At Mani Teched Institute, we believe in empowering individuals with the skills and knowledge they need to excel in the dynamic field of technology. Our carefully curated courses in Python, HTML5, CSS3, JavaScript, and SQL are designed to provide a comprehensive and practical learning experience. These are the following courses:</p>
+        </div>
+
+        <div class="courses">
+            <div class="course">
+                <img src="pics/python.jpeg" alt="python">
+                <h4>Python Programming Language</h4>
+               
+                <p> Learn the fundamentals of Python programming, from basic syntax to advanced concepts like object-oriented programming and data structures.</p>
+            </div>
+            <div class="course">
+                <img src="pics/HTML5.jpeg" alt="HTML">
+                <h4>Hyper Text Markup Language</h4>
+                
+                <p> Understand the core principles of HTML5, including semantic elements, multimedia, and new features to create modern, responsive web pages.</p>
+            </div>
+            <div class="course">
+                <img src="pics/css.jpg" alt="css">
+                <h4>Cascading Style Sheet</h4>
+               
+                <p> Master the art of styling web pages with CSS3, covering everything from basic styles to advanced layouts, animations, and responsive design techniques.</p>
+            </div>
+            <div class="course">
+                <img src="pics/JS.jpg" alt="JS">
+                <h4>JavaScript Language</h4>
+                
+                <p> Dive into JavaScript programming to create dynamic, interactive web pages. Learn about variables, functions, DOM manipulation, and modern ES6+ features.</p>
+            </div>
+            <div class="course">
+                <img src="pics/sql.jpeg" alt="sql">
+                <h4>Structured Query Language</h4>
+                
+                <p>Gain proficiency in SQL for managing and querying databases. Learn about relational database concepts, CRUD operations, and advanced querying techniques.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

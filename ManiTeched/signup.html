@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+body{
+    background-color: #010101;
+}
+.navbar{
+            background: linear-gradient(to right,rgba(255, 255, 255, 0.47), rgba(26, 234, 192, 0.686),rgba(255, 255, 255, 0.571));
+            padding: 25px 15px 25px 15px;
+            margin-top: 0%;
+            gap: 15%;
+   
+        }
+        .navbar a{
+            border-left:3px hidden black;
+            text-decoration:solid;
+            font-size: 20px;
+            font-family: arial;
+            color: rgb(19, 19, 18);
+            padding: 15px 75px 15px 75px;
+            height: 40px;
+            transition: .4s ease-in-out;
+        }
+        .navbar  a:hover{
+            background-color: blue;
+            border-radius: 10px;
+            transform: scale(1.05);
+            border: 1px solid black;
+            color: #fff;
+
+}
+.form-box {
+  margin: 10% 40% 10% 40%;
+  max-width: 300px;
+  background: #f1f7fe;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #010101;
+  transition: .4s ease-in-out;
+}
+.form-box:hover{
+      transform: scale(1.05);
+      border: 1px solid white;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+  gap: 16px;
+  text-align: center;
+}
+
+/*Form text*/
+.title {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+/*Inputs box*/
+.form-container {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 1rem 0 .5rem;
+  width: 100%;
+ 
+}
+
+.input {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: .9rem;
+  padding: 8px 15px;
+}
+
+.form-section {
+  padding: 16px;
+  font-size: .85rem;
+  background-color: #e0ecfb;
+  box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+}
+
+.form-section a {
+  font-weight: bold;
+  color: #0066ff;
+  transition: color .3s ease;
+}
+
+.form-section a:hover {
+  color: #005ce6;
+  text-decoration: underline;
+}
+
+/*Button*/
+.form button {
+  background-color: #0066ff;
+  color: #fff;
+  border: 0;
+  border-radius: 24px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.form button:hover {
+  background-color: #005ce6;
+}
+.button1{
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 5px;
+  color: white;
+  background-color: #0066ff;
+}
+.button1:hover{
+  background-color: rgba(0, 0, 0, 0.419);
+}
+
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="About.html">About</a>
+    <a href="Trainer.html">Trainer</a>
+    <a href="batches.html", target="_blank">Batches</a>
+    <a href="course-details.html">Course Details</a>
+    <a href="login.html", target="_blank">Login</a>
+    <a href="signup.html", target="_blank">Signup</a>
+
+</nav>
+    <div class="form-box">
+        <form class="form">
+            <span class="title">Sign up</span>
+            <span class="subtitle">Create a free account with your email.</span>
+            <div class="form-container">
+              <label class="required">
+              <input type="text" class="input" placeholder="Full Name" required></label>
+              <label class="required">
+              <input type="email" class="input" placeholder="Email" required></label>
+              <label class="required">
+              <input type="password" class="input" placeholder="Password" maxlength="15px" required></label>
+            </div>
+            <button>Sign up</button>
+        </form>
+        <div class="form-section">
+          <p>Have an account? <button class="button1" onclick="window.location.href='login.html'">Log in</button>  </p>
+        </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ManiTeched</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flexbox;
+    }
+    .navbar{
+            background: linear-gradient(to right,rgba(255, 255, 255, 0.47), rgba(26, 234, 192, 0.686),rgba(255, 255, 255, 0.571));
+            padding: 25px 15px 25px 15px;
+            margin-top: 0%;
+            gap: 15%;
+   
+        }
+        .navbar a{
+            border-left:3px hidden black;
+            text-decoration:solid;
+            font-size: 20px;
+            font-family: arial;
+            color: rgb(19, 19, 18);
+            padding: 15px 75px 15px 75px;
+            height: 40px;
+            transition: .4s ease-in-out;
+        }
+        .navbar  a:hover{
+            background-color: blue;
+            border-radius: 10px;
+            transform: scale(1.05);
+            border: 1px solid black;
+            color: #fff;
+
+        }
+    .background{
+        background-image: url("aboutt.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .background::after{
+        background: rgba(0,0,0,1);
+    }
+    .welcome h4{
+        text-align: center;
+        font-size: 40px;
+        box-shadow: 8px 8px 10px 10px rgba(48, 47, 47, 0.122);
+        color: rgb(6, 172, 117);
+    }
+    .mission h3{
+        font-size: 25px;
+        color: rgba(9, 26, 182, 0.622);
+    }
+    .mission, .we-are, .courses, .duration, .choose, .join{
+        color: black;
+        border-radius: 10px;
+        padding: 10px;
+        
+        transition: tranform 0.5s;
+    }
+    .mission:hover{
+        transform: translateY(10px);
+        box-shadow: 8px 8px 10px 5px black;
+    }
+    .we-are h3{
+        font-size: 25px;
+        color: rgba(170, 54, 91, 0.966);
+    }
+    .we-are:hover{
+        transform: translateX(10px);
+        box-shadow: 8px 8px 10px 5px black;
+    }
+    .courses h3{
+        font-size: 25px;
+        color:rgb(251, 189, 5);
+    }
+    .courses:hover{
+        transform: translateX(10px);
+        box-shadow: 8px 8px 10px 5px black;
+    }
+    .duration h3{
+        font-size: 25px;
+        color: rgb(9, 217, 253);
+    }
+    .duration:hover{
+        transform: translateX(10x);
+        box-shadow: 8px 8px 10px 5px black;
+    }
+    .choose h3{
+        font-size: 25px;
+        color: brown;
+    }
+    .choose:hover{
+        transform: translateY(10px);
+        box-shadow: 8px 8px 10px 5px black;
+    }
+    .join:hover{
+        transform: translateY(10px);
+        box-shadow: 8px 8px 10px 5px black;
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <a href="About.html">About</a>
+        <a href="Trainer.html">Trainer</a>
+        <a href="batches.html", target="_blank">Batches</a>
+        <a href="course-details.html">Course Details</a>
+        <a href="login.html", target="_blank">Login</a>
+        <a href="signup.html", target="_blank">Signup</a>
+
+    </nav>
+    <div class="welcome">
+        <h4>Welcome to Maniteched Institute</h4>
+        <p style="color: black;margin: 10px;">Unlock your potential and elevate your career with Maniteched Institute's comprehensive Online Python Full Stack Course. 
+            Designed for aspiring developers and professionals seeking to expand their skill set, our course offers an in-depth
+            exploration of Python programming and full stack development.
+           </p>
+    </div>
+    <div class="background">
+        <div class="mission">
+        <h3>Our Mission</h3>
+        <p>At Maniteched Institute, our mission is to empower individuals with the skills and knowledge needed to thrive in the ever-evolving tech industry.
+            We are dedicated to providing high-quality, accessible education that bridges the gap between academic learning and practical, real-world application.
+        </p>
+     </div>
+     <div class="we-are">
+        <h3>Who We Are </h3>
+        <p>Maniteched Institute is a premier online education platform specializing in technology and programming courses.
+            Founded with the vision of creating a transformative learning experience, we offer a range of courses designed
+             to equip learners with the tools and expertise required for success in the digital age.
+        </p>
+        <h4 style="color: black;"><strong>Industry-Experienced Instructors:</strong></h4>
+         <p>Our courses are led by seasoned professionals who bring a wealth of industry experience and insights, 
+            ensuring that our students receive relevant and up-to-date education.
+        </p>
+        <h4 style="color: black;"><strong>Hands-On Learning:</strong></h4>
+        <p>We believe in the power of learning by doing. Our curriculum emphasizes practical
+        project-based learning to help students apply theoretical concepts in real-world scenarios.</p>
+        <h4 style="color: black;"><strong>Flexible Learning Environment:</strong></h4>
+        <p>With our online platform, students can learn at their own pace, balancing their education with personal and professional commitments.
+        </p>
+ 
+     </div>
+     <div class="courses">
+        <h3 >Our Courses</h3>
+        <ul>
+            <li>Python</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>SQL</li><br>
+    <span><ins>Each course is carefully crafted to provide a comprehensive learning experience, 
+                covering everything from foundational principles to advanced techniques.
+            </ins></span>
+        </ul>
+     </div>
+     <div class="duration">
+        <h3> Course Duration</h3>
+        <p>Our Online Python Full Stack Course spans 3 months, with an estimated 10-15 hours of study per week.
+         <p>This duration ensures comprehensive coverage of all topics while allowing flexibility for your personal and professional commitments.</p>
+        </p>
+     </div>
+     <div class="choose">
+        <h3>Why Choose Us?</h3>
+       <dl>
+            <dt style="color: black;"><strong>Cutting-Edge Curriculum:</strong></dt><br>
+                <dd>Our courses are continuously updated to reflect the latest industry trends and technologies.</dd>
+            <dt style="color: black;"><strong>Supportive Community:</strong></dt><br>
+                <dd>Join a community of like-minded learners and professionals, fostering collaboration and networking opportunities.</dd>
+            <dt style="color: black;"><strong>Career Services:</strong></dt><br>
+                <dd> We provide extensive career support, including resume building, interview preparation, 
+                    and job placement assistance, to help you transition smoothly into the tech industry.</dd>
+        </dl>
+     </div>
+         
+    <div class="join">
+        <span style="color: rgb(227, 107, 16); font-size: 25px;">Join Us</span>
+        <span style="color: blue;font-size: 25px;"> Enroll Today</span>
+        <p>Join Maniteched Institute and take the first step towards a successful career in full stack development.
+            Our Online Python Full Stack Course equips you with the skills and knowledge needed to thrive in the competitive tech industry.
+            Enroll now and start your journey to becoming a proficient full stack developer.
+        </p>
+    </div>
+       <center><h3 style="font-style: oblique;font-size: 25px;"><span style="color:rgb(44, 42, 165);">Maniteched Institute</span>-<ins><span style="color:rgb(203, 10, 233);">Shaping the Future of Tech Education</span></h3>    
+       </ins></center>
+    </div>
+</body>
+</html>
